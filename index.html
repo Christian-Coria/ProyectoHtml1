@@ -5,13 +5,84 @@
     <title>MIWEB</title>
 </head>
 <body>
+    <form action="/formulario" method="">
+        <!--action="indicamos la ruta 
+            de guardado del formularo"
+            method="" indica el metodo de envio del 
+            formulario y puede ser GET envia los valores que estan 
+            dentro del formulario atravez de la URL 
+            POST usa mas campos y no muestra los
+             datos en la URL-->
+        <label for="nombre">Nombre</label>
+        <input type="text"  id="nombre" name="nombre"  placeholder="NOMBRE"/>
+        <!-- sw puwdw asignar valores por 
+            defecto  despues de inpuy value="el valor por defecto"-->
+    <!-- con for dentro de label indicamos que si 
+        pincha en el nomre (en este caso) igual
+         ingresa al campo de escritura del imput
+        placeholder="NOMBRE" indica dentro del 
+        cuadro que deberia colocar-->
+    <br>
+
+    <label for="comentario">Comentario</label>
+    <br>
+    <textarea cols="50" rows="10" id="comentario"  name="comentario" placeholder="ingrese comentario"></textarea> 
+    <br>
+    <input type="submit" />
+    <!-- rows="10" indicamos 
+        si es que queremos el tamaño (lineas)de la caja de comentarios
+         cols="50" indica la cantidad de columnas -->
+    </form>
+    <br>
+    <br>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="password" id="password" name="password"  placeholder="password"/>
+    </form>
+    <br>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="submit" id="nombre" name="nombre"  placeholder="NOMBRE"/>
+    </form>
+    <br>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="radio" id="nombre" name="nombre"  placeholder="NOMBRE"/>
+    </form>
+    <br>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="email" id="email" name="email"  placeholder="email"/>
+    </form>
+    <br>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="checkbox" id="email" name="email"  placeholder="email"/>
+    </form>
+    <br>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="file" id="email" name="email"  placeholder="email"/>
+    </form>
     <h1>MI PRIMERA Prctica en HTML</h1>
     <h2>MI PRIMERA Prctica en HTML</h2>
     <h3>MI PRIMERA Prctica en HTML</h3>
     <h4>MI PRIMERA Prctica en HTML</h4>
     <h5>MI PRIMERA Prctica en HTML</h5>
     <h6>MI PRIMERA Prctica en HTML</h6>
-    <P> AQUI SOLO VA EL TEXTO solo texto---</P>
+    <hr>
+    <P> AQUI SOLO VA EL <span>  TEXTO solo</span> texto---</P>
+    <br> <!-- esto es un salto de linea-->
+    <P> para separar lineas en parrafo---</P>
+    <!-- esto es un 
+        comentario y esta etiqueta sirve para
+         seleccinar lineas dentro del parrafo <span>-->
+            <a href="http://www.google.com"> ir a Google</a>
+    <!-- SI AGREGAMOS ASI SE ABRE EN OTRA PESTA...
+        <a targuet="blank"  href="http:........." > ... </a>   -->
+
+    <img src="https://images-na.ssl-images-amazon.com/images/I/61IKODPiVnL.__AC_SX300_SY300_QL70_FMwebp_.jpg" width="300"/>
+    <!-- nuevas dimenciones para ,anipular la imagen   width="300"  o heigth="300" -->
 
 </body>
 </html>
