@@ -5,6 +5,32 @@
     <title>MIWEB</title>
 </head>
 <body>
+    <ul> <!--  ul significa lista no ordenada  -->
+         <!-- li signofica item de la lista y dara un punto junto a cada item de la lista-->
+        <li> Elemento 1 </li>
+        <li> Elemento 2 </li>
+        <li> Elemento 3 </li>
+        <li> Elemento 4 </li>
+        <!-- si el punto es negro es que la lista esta desordenada-->
+    </ul>
+
+    <ol> <!--  ol significa enumera la lista  -->
+        <!-- li signofica item de la lista y dara un punto junto a cada item de la lista-->
+       <li> Elemento 1 </li>  <!-- si <li value="37"  empezara el conteo incremental desde de ese numero-->
+       <li> Elemento 2 </li>
+       <li> Elemento 3 </li>
+       <li> Elemento 4 </li>
+       <li>
+           <ol>
+                <li style="list-style-type:lower-alpha;" >sub elemento 1</li>  <!--estas son listas anidadas,-->
+                <li style="list-style-type:lower-alpha;" >sub elemento 2</li>  <!--si dejamos solo li empieza desde 1 -->
+                <li style="list-style-type:lower-alpha;" >sub elemento 3</li>  <!--<li style="list-style-type:"... abre un desplegable-->
+                <li style="list-style-type:lower-alpha;" >sub elemento 4</li>
+
+           </ol>
+        </li>
+   </ol>
+
     <form action="/formulario" method="">
         <!--action="indicamos la ruta 
             de guardado del formularo"
@@ -27,6 +53,7 @@
     <label for="comentario">Comentario</label>
     <br>
     <textarea cols="50" rows="10" id="comentario"  name="comentario" placeholder="ingrese comentario"></textarea> 
+    <!--TEXAREA NO LLEVA VALORES POR DEFECTO se puede colocar al final     >valor</textarea>    -->
     <br>
     <input type="submit" />
     <!-- rows="10" indicamos 
@@ -64,6 +91,13 @@
         <label for="nombre">Nombre</label>
         <input type="file" id="email" name="email"  placeholder="email"/>
     </form>
+<!--    BOTONES   -->
+     <br>
+    <button type="button">tipo button</button> <!-- se programa con js-->
+    <button type="reset">tipo reset</button>   <!-- resetea el formulario-->
+    <button type="submit">tipo submit</button> <!-- envia el formulario-->
+    <!-- valores de type  boton   submit ()     reset (deja el formulario como estaba antes de llenar)-->
+    <br>
     <h1>MI PRIMERA Prctica en HTML</h1>
     <h2>MI PRIMERA Prctica en HTML</h2>
     <h3>MI PRIMERA Prctica en HTML</h3>
